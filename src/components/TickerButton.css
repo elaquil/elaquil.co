@@ -48,32 +48,34 @@
 }
 
 @keyframes invertbg {
-  from {background-color: #FFF;}
-  to {background-color: #000;}
+  from {background-color: var(--clr-light);}
+  to {background-color: var(--clr-dark);}
 }
 
 @keyframes inverttx {
-  from {color: #000;}
-  to {color: #FFF;}
+  from {color: var(--clr-dark);}
+  to {color: var(--clr-light);}
 }
 
 .tickerButton{
   overflow: hidden;
   display:inline-block;
-  border: 1px solid #000;
-  background-color: #FFF;
+  border: 1px solid var(--clr-dark);
+  background-color: var(--clr-light);
   white-space: nowrap;
   width: 100%;
   padding: 0;
+  margin-top: -1px;
   transition: background-color 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .tickerButton:active{
-  background-color: #000;
+  background-color: var(--clr-dark);
 }
 
 .tickerButton:active > div > h2{
-  color: #FFF;
+  color: var(--clr-light);
 }
 
 .tickerButtonContainer:hover{
@@ -92,7 +94,7 @@
   margin:0;
   padding-left:0px;
   text-align: left;
-  color: #000;
+  color: var(--clr-dark);
   transition: color 0.2s ease-in-out;
   padding: 0px 5px;
   user-select: none;

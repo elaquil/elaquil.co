@@ -1,6 +1,7 @@
 import './App.css';
 import TickerButton from './components/TickerButton';
 import Header from './components/Header';
+import ThemeToggle from './components/ThemeToggle';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <TickerButton anchor="#" buttonText='1. MOTION GRAPHICS'/>
         <TickerButton anchor="#" buttonText='2. VIDEO'/>
       </div>
+      <ThemeToggle />
     </>
   )
 }

@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Helvetica Neue LT Std';
-  src: url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.eot');
-  src: url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.eot?#iefix') format('embedded-opentype'),
-       url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.woff2') format('woff2'),
-       url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.woff') format('woff'),
-       url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.ttf')  format('truetype'),
-       url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.svg#Helvetica Neue LT Std') format('svg');
+  src:  url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.eot');
+  src:  url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.woff2') format('woff2'),
+        url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.woff') format('woff'),
+        url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.ttf')  format('truetype'),
+        url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.svg#Helvetica Neue LT Std') format('svg');
 }
 
 /* Custom Properties */
@@ -24,6 +24,7 @@
 
   --clr-light: #ffffff;
   --clr-dark: #000000;
+  --clr-dark-transparent: #00000000;
   --clr-accent: #0071ce;
 
   --fs-h1: 3.7rem;
@@ -31,6 +32,13 @@
   --fs-h3: 1.25rem;
   --fs-p: 1rem;
 
+}
+
+[data-theme='dark'] {
+    --clr-light: #000000;
+    --clr-dark: #ffffff;
+    --clr-dark-transparent: #ffffff00;
+    --clr-accent: #0071ce;
 }
 
 @media (max-width: 800px){
@@ -47,11 +55,16 @@
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
 	scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--clr-light);
+  margin: 0;
 }
 
 h1,
@@ -59,13 +72,13 @@ h2,
 h3{
 line-height: 1.1;
 margin: 0;
+color: var(--clr-dark);
 }
 
 h1{
 font-family: var(--ff-primary);
 font-weight: var(--fw-regular);
 font-size: var(--fs-h1);
-color: #000000;
 text-align: left;
 margin-top: 0px;
 margin-bottom: 0px;
@@ -94,25 +107,25 @@ img{
 }
 
 a{
-  color:#000000;
+  color:var(--clr-dark);
   text-decoration: underline;
   animation: hideUnderline 0.5s ease-in-out;
   animation-fill-mode: forwards;
 }
 
 a:hover{
-  text-decoration-color: #00000000;
+  text-decoration-color: var(--clr-dark);
   animation: showUnderline 0.5s ease-in-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes showUnderline {
   to {
-    text-decoration-color: #000000FF;
+    text-decoration-o: var(--clr-dark);
   }
 }
 @keyframes hideUnderline {
   to {
-    text-decoration-color: #00000000;
+    text-decoration-color: var(--clr-dark-transparent);
   }
 }

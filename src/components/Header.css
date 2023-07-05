@@ -14,10 +14,11 @@ h2{
   word-break: break-word;
   vertical-align: top;
   user-select: none;
-  color: var(--clr-light);
-  transition: color 0.2s ease-in-out;
+  color: var(--clr-dark);
+  opacity: 0%;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .disclaimer.visible{
-  color: var(--clr-dark);
+  opacity: 100%;
 }

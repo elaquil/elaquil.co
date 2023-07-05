@@ -19,7 +19,7 @@ const TickerButton = ({anchor = "", buttonText}: tickerButtonProps) => {
         container.style.width = `${textWidth}px`;
       }
     }, 10);
-  }, []);
+  }, [buttonText]);
 
   return(
     <a href={anchor}>
@@ -34,7 +34,3 @@ const TickerButton = ({anchor = "", buttonText}: tickerButtonProps) => {
 };
 
 export default TickerButton;
-
-function componentDidMount() {
-  throw new Error('Function not implemented.');
-}
