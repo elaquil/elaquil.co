@@ -85,10 +85,6 @@ p{
   font-size: var(--fs-h3);
 }
 
-a{
-  color: white;
-}
-
 img{
   display: block;
   width: 50vw;
@@ -97,3 +93,26 @@ img{
   margin: 20px 0px;
 }
 
+a{
+  color:#000000;
+  text-decoration: underline;
+  animation: hideUnderline 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+a:hover{
+  text-decoration-color: #00000000;
+  animation: showUnderline 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showUnderline {
+  to {
+    text-decoration-color: #000000FF;
+  }
+}
+@keyframes hideUnderline {
+  to {
+    text-decoration-color: #00000000;
+  }
+}
