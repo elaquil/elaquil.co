@@ -1,14 +1,17 @@
-import './App.css'
-import TickerButton from './components/TickerButton'
+import './App.css';
+import TickerButton from './components/TickerButton';
+import Header from './components/Header';
 
 function App() {
 
   return (
     <>
-      <h1>Square One!</h1>
-      <p>Font Testing</p>
-      <TickerButton anchor="https://www.google.com" buttonText='1. MOTION GRAPHICS'/>
-      <TickerButton anchor="https://www.google.com" buttonText='2. TEST TEXT'/>
+      <Header />
+      <div>
+        <TickerButton anchor="#" buttonText='0. WEB DEVELOPMENT'/>
+        <TickerButton anchor="#" buttonText='1. MOTION GRAPHICS'/>
+        <TickerButton anchor="#" buttonText='2. VIDEO'/>
+      </div>
     </>
   )
 }

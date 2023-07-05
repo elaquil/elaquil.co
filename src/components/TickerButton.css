@@ -65,7 +65,7 @@
   white-space: nowrap;
   width: 100%;
   padding: 0;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .tickerButton:active{
@@ -93,5 +93,7 @@
   padding-left:0px;
   text-align: left;
   color: #000;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  padding: 0px 5px;
+  user-select: none;
 }

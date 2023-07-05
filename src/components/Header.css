@@ -1,0 +1,23 @@
+.asterisk{
+  color: var(--clr-accent);
+  cursor: pointer;
+}
+
+h2{
+  display: inline-block;
+}
+
+.disclaimer{
+  font-size: 0.7rem;
+  font-style: italic;
+  display: inline;
+  word-break: break-word;
+  vertical-align: top;
+  user-select: none;
+  color: var(--clr-light);
+  transition: color 0.2s ease-in-out;
+}
+
+.disclaimer.visible{
+  color: var(--clr-dark);
+}

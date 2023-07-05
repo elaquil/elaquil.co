@@ -13,10 +13,12 @@ const TickerButton = ({anchor = "", buttonText}: tickerButtonProps) => {
   useEffect(() => {
     const container = buttonRef.current;
     const text  = textRef.current;
-    if (container && text) {
-      const textWidth = text.offsetWidth;
-      container.style.width = `${textWidth}px`;
-    }
+    setTimeout(() => {
+      if (container && text) {
+        const textWidth = text.offsetWidth;
+        container.style.width = `${textWidth}px`;
+      }
+    }, 10);
   }, []);
 
   return(
@@ -32,3 +34,7 @@ const TickerButton = ({anchor = "", buttonText}: tickerButtonProps) => {
 };
 
 export default TickerButton;
+
+function componentDidMount() {
+  throw new Error('Function not implemented.');
+}
