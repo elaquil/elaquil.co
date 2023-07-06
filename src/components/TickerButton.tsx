@@ -11,14 +11,20 @@ const TickerButton = ({anchor = "", buttonText}: tickerButtonProps) => {
   const textRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    const container = buttonRef.current;
-    const text  = textRef.current;
-    setTimeout(() => {
+    document.fonts.ready.then(function () {
+      const container = buttonRef.current;
+      const text  = textRef.current;
       if (container && text) {
         const textWidth = text.offsetWidth;
+        console.log(textWidth);
         container.style.width = `${textWidth}px`;
       }
-    }, 10);
+      setTimeout(() => {
+        if(container){
+          container.style.transition = "width 0.2s ease-in-out";
+        }
+      }, 1);
+    });
   }, [buttonText]);
 
   return(
