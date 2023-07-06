@@ -10,7 +10,7 @@
   width: 50px;
   background-color: var(--clr-light);
   border-radius: 50%;
-  border: 2px solid var(--clr-dark);
+  border: 1px solid var(--clr-dark);
   display: inline-block;
   font-size: 31px;
   position: relative;
@@ -22,13 +22,15 @@
   .socialBubble{
     height: 36px;
     width: 36px;
-    font-size: 25px;
+    font-size: 23px;
   }
   .socialBubbleContainer{
     height: 33px !important;
-    width: 33px;
+    width: 33px !important;
     position: relative;
-    left: -0.5px;
+    left: 0.5px;
+    right: 0px !important;
+    bottom: 0px !important;
   }
 }
 
@@ -46,9 +48,13 @@
 
 .socialBubbleContainer{
   display: inline-block;
-  height: 46px;
+  height: 50px;
+  width: 50px;
   overflow: hidden;
   border-radius: 50%;
+  position: relative;
+  right: 1px;
+  bottom: 1px;
 }
 
 svg{
