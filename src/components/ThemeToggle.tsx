@@ -7,9 +7,11 @@ const ThemeToggle = () => {
     if (innerText === 'LIGHTS OFF') {
       setInnerText('LIGHTS ON');
       document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
     } else {
       setInnerText('LIGHTS OFF');
       document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
     }
   };
   useEffect(() => {
