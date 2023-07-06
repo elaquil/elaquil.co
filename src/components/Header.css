@@ -3,6 +3,12 @@
   cursor: pointer;
 }
 
+h1{
+  display: inline;
+  margin-right: 5px !important;
+  padding: 5px 0px;
+}
+
 h2{
   display: inline;
 }
@@ -21,4 +27,12 @@ h2{
 
 .disclaimer.visible{
   opacity: 100%;
+}
+
+.socials{
+  display: inline;
+}
+
+.titleContainer{
+  padding-top: 10px;
 }
