@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <div>
+      <div className='nav'>
         <TickerButton anchor="#" buttonText='0. WEB DEVELOPMENT'/>
         <TickerButton anchor="#" buttonText='1. MOTION GRAPHICS'/>
         <TickerButton anchor="#" buttonText='2. VIDEO'/>
