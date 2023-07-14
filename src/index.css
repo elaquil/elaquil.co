@@ -10,11 +10,16 @@
         url('assets/fonts/Helvetica-Neue-LT-Std-93-Black-Extended22550.svg#Helvetica Neue LT Std') format('svg');
 }
 
+@font-face{
+  font-family: 'HOUSE3009';
+  src: url('assets/fonts/HOUSE3009 Spaceage-Heavy-Beta Regular.otf') format('opentype');
+}
+
 /* Custom Properties */
 
 :root{
 
-  --ff-primary: 'Helvetica Neue LT Std';
+  --ff-primary: 'HOUSE3009', 'Helvetica Neue LT Std';
   --ff-secondary: ocr-b-std, monospace;
 
   --fw-thin: 100;
