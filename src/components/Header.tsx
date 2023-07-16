@@ -22,6 +22,7 @@ const Header = () => {
         </span>
       </div>
       <h2>i develop websites, create motion graphics, and edit videos</h2><h2 className="asterisk" onClick={asteriskClick}>*</h2>
+      <br></br>
       <p className={
         "disclaimer" + (isDisclaimerVisible ? " visible" : "")
         }><i>*inclusive of whatever else i feel like doing</i></p>

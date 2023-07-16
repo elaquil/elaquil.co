@@ -1,24 +1,26 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import TickerButton from "./TickerButton";
+import ThemeContext from "../context/ThemeContext";
 
 const ThemeToggle = () => {
+  const themeProviderItems = useContext(ThemeContext);
+  const { theme, toggleTheme } = themeProviderItems;
+
   const [innerText, setInnerText] = useState('LIGHTS OFF');
+
   const changeTheme = () => {
     if (innerText === 'LIGHTS OFF') {
       setInnerText('LIGHTS ON');
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
+      toggleTheme();
     } else {
       setInnerText('LIGHTS OFF');
-      document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('theme', 'light');
+      toggleTheme();
     }
   };
+  
   useEffect(() => {
-    const theme = localStorage.getItem('theme');
     if (theme === 'dark') {
       setInnerText('LIGHTS ON');
-      document.documentElement.setAttribute('data-theme', 'dark');
     }
   }, []);
   
