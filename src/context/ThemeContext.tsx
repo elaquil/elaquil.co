@@ -1,4 +1,4 @@
-import React, { ReactNode, createContext, useEffect, useState } from 'react';
+import { createContext } from 'react';
 
 interface ThemeContextProps {
   theme: string;

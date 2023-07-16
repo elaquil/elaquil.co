@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import "./HeroSection.css";
 import ThemeContext from "../context/ThemeContext";
 
