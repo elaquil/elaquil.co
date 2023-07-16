@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <h2>my name is</h2>
       <div className='titleContainer'>
-        <h1>Ismael Hamilton-El Aquil</h1>
+        <h1 className='mainTitle'>Ismael Hamilton-El Aquil</h1>
         <span className="socials">
           <SocialBubble anchor={'#'} icon={faEnvelope} target='_self'/>
           <SocialBubble anchor={'#'} icon={faGithubAlt} />

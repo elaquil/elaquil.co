@@ -5,6 +5,7 @@ import ThemeToggle from './components/ThemeToggle';
 import HeroSection from './components/HeroSection';
 import {ThemeContextProvider} from './context/ThemeContext';
 import { useEffect, useState } from 'react';
+import Section from './components/Section';
 
 function App() {
 
@@ -36,13 +37,22 @@ function App() {
       <>
         <Header />
         <div className='nav'>
-          <TickerButton anchor="#" buttonText='0. WEB DEVELOPMENT'/>
-          <TickerButton anchor="#" buttonText='1. MOTION GRAPHICS'/>
-          <TickerButton anchor="#" buttonText='2. VIDEO'/>
+          <TickerButton anchor="#0" buttonText='0. WEB DEVELOPMENT'/>
+          <TickerButton anchor="#1" buttonText='1. MOTION GRAPHICS'/>
+          <TickerButton anchor="#2" buttonText='2. VIDEO'/>
+          <TickerButton anchor="#3" buttonText='3. MISC'/>
           <br></br>
           <ThemeToggle />
         </div>
         <HeroSection />
+        <Section id="0" title="0. WEB DEVELOPMENT"/>
+        <br></br>
+        <Section id="1" title="1. MOTION GRAPHICS"/>
+        <br></br>
+        <Section id="2" title="2. VIDEO"/>
+        <br></br>
+        <Section id="3" title="3. MISC"/>
+
       </>
     </ThemeContextProvider>
   )

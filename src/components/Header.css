@@ -3,9 +3,9 @@
   cursor: pointer;
 }
 
-h1{
+h1.mainTitle{
   display: inline;
-  margin-right: 5px !important;
+  margin-right: 5px;
   padding: 5px 0px;
 }
 
