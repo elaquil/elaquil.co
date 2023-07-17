@@ -52,9 +52,9 @@ function App() {
           subtitle={<h2><a href='https://www.raa.com.au/' target='blank'>RAA</a></h2>}>
             <div className='gridContainer'>
               <div className='grid gridMyAccount'>
-                <img src='public/showcase/myAccount/MyAccount1.png' className='gridItem gridItemMyAccount'></img>
-                <img src='public/showcase/myAccount/MyAccount2.png' className='gridItem gridItemMyAccount'></img>
-                <img src='public/showcase/myAccount/MyAccount3.png' className='gridItem gridItemMyAccount'></img>
+                <img src='showcase/myAccount/MyAccount1.png' className='gridItem gridItemMyAccount'></img>
+                <img src='showcase/myAccount/MyAccount2.png' className='gridItem gridItemMyAccount'></img>
+                <img src='showcase/myAccount/MyAccount3.png' className='gridItem gridItemMyAccount'></img>
               </div>
             </div>
           </Entry>
