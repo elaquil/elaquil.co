@@ -1,4 +1,5 @@
 import './App.css';
+import './components/GridLayout.css';
 import TickerButton from './components/TickerButton';
 import Header from './components/Header';
 import ThemeToggle from './components/ThemeToggle';
@@ -6,6 +7,7 @@ import HeroSection from './components/HeroSection';
 import {ThemeContextProvider} from './context/ThemeContext';
 import { useEffect, useState } from 'react';
 import Section from './components/Section';
+import Entry from './components/Entry';
 
 function App() {
 
@@ -45,14 +47,30 @@ function App() {
           <ThemeToggle />
         </div>
         <HeroSection />
-        <Section id="0" title="0. WEB DEVELOPMENT"/>
+        <Section id="0" title="0. WEB DEVELOPMENT">
+          <Entry title="My Account (2022-2023) [Next.JS, React, ASP.Net Core]" 
+          subtitle={<h2><a href='https://www.raa.com.au/' target='blank'>RAA</a></h2>}>
+            <div className='gridContainer'>
+              <div className='grid gridMyAccount'>
+                <img src='public/showcase/myAccount/MyAccount1.png' className='gridItem gridItemMyAccount'></img>
+                <img src='public/showcase/myAccount/MyAccount2.png' className='gridItem gridItemMyAccount'></img>
+                <img src='public/showcase/myAccount/MyAccount3.png' className='gridItem gridItemMyAccount'></img>
+              </div>
+            </div>
+          </Entry>
+        </Section>
         <br></br>
-        <Section id="1" title="1. MOTION GRAPHICS"/>
-        <br></br>
-        <Section id="2" title="2. VIDEO"/>
-        <br></br>
-        <Section id="3" title="3. MISC"/>
+        <Section id="1" title="1. MOTION GRAPHICS">
 
+        </Section>
+        <br></br>
+        <Section id="2" title="2. VIDEO">
+
+        </Section>
+        <br></br>
+        <Section id="3" title="3. MISC">
+
+        </Section>
       </>
     </ThemeContextProvider>
   )

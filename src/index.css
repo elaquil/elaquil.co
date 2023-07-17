@@ -55,6 +55,9 @@
   --fs-h3: 1rem;
   --fs-p: 0.75rem;
 }
+a{
+  text-decoration-color: var(--clr-dark) !important;
+}
 }
 
 /* Main CSS */

@@ -3,9 +3,10 @@ import './Section.css'
 interface SectionProps {
   id: string;
   title: string;
+  children: React.ReactNode;
 }
 
-const Section = ({id, title}: SectionProps) =>{
+const Section = ({id, title, children}: SectionProps) =>{
   return (
     <section>
       <div id={id} className="secTitleContainer">
@@ -22,6 +23,8 @@ const Section = ({id, title}: SectionProps) =>{
             <h1 className="secTitle secTitle5">{title}</h1>
         </div>
       </div>
+      <br></br>
+      {children}
     </section>
   )
 };
