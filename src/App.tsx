@@ -7,8 +7,11 @@ import HeroSection from './components/HeroSection';
 import {ThemeContextProvider} from './context/ThemeContext';
 import { useEffect, useState } from 'react';
 import Section from './components/Section';
-import Entry from './components/Entry';
-import ImageModal from './components/ImageModal';
+import ElsewhereEntry from './components/Entries/ElsewhereEntry';
+import MyAccountEntry from './components/Entries/MyAccountEntry';
+import TwoHundredEntry from './components/Entries/TwoHundredEntry';
+import EverythingThatYouWantEntry from './components/Entries/EverythingThatYouWantEntry';
+import DepartedFacilityEntry from './components/Entries/DepartedFacilityEntry';
 
 function App() {
 
@@ -49,28 +52,20 @@ function App() {
         </div>
         <HeroSection />
         <Section id="0" title="0. WEB DEVELOPMENT">
-          <Entry title="My Account (2022-2023) [Next.JS, React, ASP.Net Core]" 
-          subtitle={<h2><a href='https://www.raa.com.au/' target='blank'>RAA</a></h2>}>
-            <div className='gridContainer'>
-              <div className='grid gridMyAccount'>
-                <ImageModal src='showcase/myAccount/MyAccount1.png' className='gridItem gridItemMyAccount1'></ImageModal>
-                <ImageModal src='showcase/myAccount/MyAccount2.png' className='gridItem gridItemMyAccount2'></ImageModal>
-                <ImageModal src='showcase/myAccount/MyAccount3.png' className='gridItem gridItemMyAccount3'></ImageModal>
-              </div>
-            </div>
-          </Entry>
+          <MyAccountEntry />
         </Section>
         <br></br>
         <Section id="1" title="1. MOTION GRAPHICS">
-
+          <ElsewhereEntry />
         </Section>
         <br></br>
         <Section id="2" title="2. VIDEO">
-
+          <EverythingThatYouWantEntry />
+          <TwoHundredEntry />
         </Section>
         <br></br>
         <Section id="3" title="3. MISC">
-
+          <DepartedFacilityEntry />
         </Section>
       </>
     </ThemeContextProvider>

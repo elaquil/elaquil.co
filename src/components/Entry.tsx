@@ -1,4 +1,5 @@
 import React from "react";
+import "./Entry.css";
 
 interface EntryProps{
   title: string;
@@ -9,14 +10,14 @@ interface EntryProps{
 const Entry = ({title, subtitle, children}: EntryProps) => {
 
   return (
-    <>
+    <div className="entry">
       <div className="entryHeader">
           <h2>{title}</h2>
           <br></br>
           {subtitle}
       </div>
       {children}
-    </>
+    </div>
   )
 }
 

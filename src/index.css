@@ -130,6 +130,19 @@ a:hover{
   animation-fill-mode: forwards;
 }
 
+.IFrameWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+iframe{
+  border: 1px solid var(--clr-dark);
+  border-radius: 5px;
+}
+
+
 @keyframes showUnderline {
   to {
     text-decoration-o: var(--clr-dark);

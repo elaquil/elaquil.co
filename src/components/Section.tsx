@@ -23,7 +23,6 @@ const Section = ({id, title, children}: SectionProps) =>{
             <h1 className="secTitle secTitle10">{title}</h1>
         </div>
       </div>
-      <br></br>
       {children}
     </section>
   )
