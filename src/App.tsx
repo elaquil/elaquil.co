@@ -8,6 +8,7 @@ import {ThemeContextProvider} from './context/ThemeContext';
 import { useEffect, useState } from 'react';
 import Section from './components/Section';
 import Entry from './components/Entry';
+import ImageModal from './components/ImageModal';
 
 function App() {
 
@@ -52,9 +53,9 @@ function App() {
           subtitle={<h2><a href='https://www.raa.com.au/' target='blank'>RAA</a></h2>}>
             <div className='gridContainer'>
               <div className='grid gridMyAccount'>
-                <img src='showcase/myAccount/MyAccount1.png' className='gridItem gridItemMyAccount'></img>
-                <img src='showcase/myAccount/MyAccount2.png' className='gridItem gridItemMyAccount'></img>
-                <img src='showcase/myAccount/MyAccount3.png' className='gridItem gridItemMyAccount'></img>
+                <ImageModal src='showcase/myAccount/MyAccount1.png' className='gridItem gridItemMyAccount1'></ImageModal>
+                <ImageModal src='showcase/myAccount/MyAccount2.png' className='gridItem gridItemMyAccount2'></ImageModal>
+                <ImageModal src='showcase/myAccount/MyAccount3.png' className='gridItem gridItemMyAccount3'></ImageModal>
               </div>
             </div>
           </Entry>

@@ -39,15 +39,15 @@
   }
 }
 
-.gridItemMyAccount:nth-child(1){
+.gridItemMyAccount1{
   grid-area: two;
 }
 
-.gridItemMyAccount:nth-child(2){
+.gridItemMyAccount2{
   grid-area: one;
 }
 
-.gridItemMyAccount:nth-child(3){
+.gridItemMyAccount3{
   grid-area: three;
 }
 
