@@ -86,6 +86,7 @@
   grid-template-areas: 'one' 'two' 'three';
   gap: 1em;
   grid-auto-columns: 1fr;
+  margin-top: 1em;
 }
 
 .gridItemDF3{
