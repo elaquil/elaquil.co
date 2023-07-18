@@ -39,7 +39,7 @@ function App() {
       <>
         <Header />
         <div className='nav'>
-          <TickerButton anchor="#0" buttonText='0. HI THERE'/>
+          <TickerButton anchor="#0" buttonText='0. WEB DEVELOPMENT'/>
           <TickerButton anchor="#1" buttonText='1. MOTION GRAPHICS'/>
           <TickerButton anchor="#2" buttonText='2. VIDEO'/>
           <TickerButton anchor="#3" buttonText='3. MISC'/>
