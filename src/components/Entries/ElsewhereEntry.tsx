@@ -23,7 +23,7 @@ const ElsewhereEntry = () => {
             <ImageModal src='showcase/elsewhereTransmissions/Elsewhere1.gif' className='gridItem gridItemElsewhere1'></ImageModal>
             <ImageModal src='showcase/elsewhereTransmissions/Elsewhere2.gif' className='gridItem gridItemElsewhere2'></ImageModal>
             <ImageModal src='showcase/elsewhereTransmissions/Elsewhere3.gif' className='gridItem gridItemElsewhere3'></ImageModal>
-            <video autoPlay muted loop className='gridItem gridItemElsewhere4' onClick={togglePlay} ref={videoRef}>
+            <video autoPlay muted loop webkit-playsinline playsInline className='gridItem gridItemElsewhere4' onClick={togglePlay} ref={videoRef}>
               <source src="showcase/elsewhereTransmissions/ElsewhereClip.mp4"></source>
             </video>
           </div>
