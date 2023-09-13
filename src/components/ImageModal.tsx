@@ -139,7 +139,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ src, className = "", alt = "" }
         <Modal isClicked={isClicked} onClick={handleClick} ref={modalRef}></Modal>
         <FullScreenImage src={src} alt={alt} isClicked={isClicked} onClick={handleClick} ref={fullScreenImageRef} />
       </>
-      <Image src={src} alt={alt} className={className} isClicked={isClicked} onClick={handleClick} />
+      <Image src={src} alt={alt} className={className} isClicked={isClicked} onClick={handleClick} loading='lazy'/>
     </>
     );
 };

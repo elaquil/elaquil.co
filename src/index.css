@@ -70,6 +70,7 @@ a{
 
 html {
 	scroll-behavior: smooth;
+  /* scrollbar-gutter: stable; */
 }
 
 body{
@@ -119,15 +120,17 @@ img{
 
 a{
   color:var(--clr-dark);
-  text-decoration: underline;
-  animation: hideUnderline 0.5s ease-in-out;
-  animation-fill-mode: forwards;
+  text-decoration: underline var(--clr-dark);
+  /* animation: hideUnderline 0.5s ease-in-out; */
+  /* animation-fill-mode: forwards; */
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover{
+  color:var(--clr-accent);
   text-decoration-color: var(--clr-dark);
-  animation: showUnderline 0.5s ease-in-out;
-  animation-fill-mode: forwards;
+  /* animation: showUnderline 0.5s ease-in-out; */
+  /* animation-fill-mode: forwards; */
 }
 
 .IFrameWrapper{
@@ -142,7 +145,7 @@ iframe{
 
 @keyframes showUnderline {
   to {
-    text-decoration-o: var(--clr-dark);
+    text-decoration-color: var(--clr-dark);
   }
 }
 @keyframes hideUnderline {

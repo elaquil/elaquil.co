@@ -46,6 +46,24 @@
   grid-area: three;
 }
 
+.gridQtb{
+  grid-template-areas: 'one' 'two' 'three';
+  gap: 1em;
+  grid-auto-columns: 1.5fr 1fr;
+}
+
+.gridItemQtb1{
+  grid-area: two;
+}
+
+.gridItemQtb2{
+  grid-area: one;
+}
+
+.gridItemQtb3{
+  grid-area: three;
+}
+
 .gridElsewhere{
   grid-template-areas: 'one' 'two' 'three' 'four';
   gap: 1em;
@@ -103,6 +121,12 @@
 
 @media screen and (min-width: 800px){
   .gridMyAccount{
+    grid-template-areas: 
+                  'one three' 
+                  'two three';
+  }
+
+  .gridQtb{
     grid-template-areas: 
                   'one three' 
                   'two three';

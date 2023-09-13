@@ -15,10 +15,10 @@ const Header = () => {
       <div className='titleContainer'>
         <h1 className='mainTitle'>Ismael Hamilton-El Aquil</h1>
         <span className="socials">
-          <SocialBubble anchor={'#'} icon={faEnvelope} target='_self'/>
-          <SocialBubble anchor={'#'} icon={faGithubAlt} />
-          <SocialBubble anchor={'#'} icon={faLinkedinIn} />
-          <SocialBubble anchor={'#'} icon={faVimeoV} />
+          <SocialBubble anchor={'mailto:hello@elaquil.co'} icon={faEnvelope} target='_self'/>
+          <SocialBubble anchor={'https://github.com/elaquil'} icon={faGithubAlt} />
+          <SocialBubble anchor={'https://linkedin.com/in/elaquil'} icon={faLinkedinIn} />
+          <SocialBubble anchor={'https://vimeo.com/elaquil'} icon={faVimeoV} />
         </span>
       </div>
       <h2>i develop websites, create motion graphics, and edit videos</h2><h2 className="asterisk" onClick={asteriskClick}>*</h2>

@@ -19,7 +19,7 @@ const DepartedFacilityEntry = () => {
           <ImageModal src='showcase/df/DFBox.png' className='gridItem gridItemDF5'></ImageModal>
         </div>
       </div>
-      <p>WIP Project</p>
+      <p>wip project</p>
     </Entry>
   );
 };

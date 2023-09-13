@@ -12,6 +12,10 @@ import MyAccountEntry from './components/Entries/MyAccountEntry';
 import TwoHundredEntry from './components/Entries/TwoHundredEntry';
 import EverythingThatYouWantEntry from './components/Entries/EverythingThatYouWantEntry';
 import DepartedFacilityEntry from './components/Entries/DepartedFacilityEntry';
+import LazyImage from './components/LazyImage';
+import QuoteToBuyEntry from './components/Entries/QuoteToBuyEntry';
+import ElaquilCoEntry from './components/Entries/ElaquilCoEntry';
+import AnimatedLogo from './components/AnimatedLogo';
 
 function App() {
 
@@ -53,6 +57,8 @@ function App() {
         <HeroSection />
         <Section id="0" title="0. WEB DEVELOPMENT">
           <MyAccountEntry />
+          <QuoteToBuyEntry />
+          <ElaquilCoEntry />
         </Section>
         <br></br>
         <Section id="1" title="1. MOTION GRAPHICS">
@@ -67,6 +73,7 @@ function App() {
         <Section id="3" title="3. MISC">
           <DepartedFacilityEntry />
         </Section>
+        <AnimatedLogo />
       </>
     </ThemeContextProvider>
   )
