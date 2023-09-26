@@ -9,3 +9,8 @@
   padding: 1em 0;
   width: 100%;
 }
+
+
+.animatedLogoContainer.dark{
+  filter: invert(1);
+}
