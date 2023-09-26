@@ -4,7 +4,7 @@ import './AnimatedLogo.css'
 
 const AnimatedLogo = () => {
   const themeProviderItems = useContext(ThemeContext);
-  const { theme, toggleTheme } = themeProviderItems;
+  const { theme } = themeProviderItems;
 
 
   return (
