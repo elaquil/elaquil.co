@@ -18,7 +18,7 @@ const HeroSection = () => {
         along with a b.sc in computer science (artificial intelligence). i'm interested in the intersection 
         between digital and analogue, and where human creativity can interface with intelligent systems for 
         creative applications. i've worked with a variety of clients with different needs. i hope my work interests 
-        you, you may reach me by any of the means provided.
+        you, you may reach me by any of the means provided above.
       </p>
     </div>
   );
