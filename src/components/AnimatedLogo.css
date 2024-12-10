@@ -1,6 +1,7 @@
 .animatedLogo{
   max-width: 300px;
   width: 50%;
+  display:none;
 }
 
 .animatedLogoContainer{
